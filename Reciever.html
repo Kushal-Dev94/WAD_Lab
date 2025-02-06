@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Users</title>
+</head>
+
+<script>
+    function retrieve_users() {
+        document.getElementById("name").innerText = localStorage.getItem("name");
+        document.getElementById("age").innerText = localStorage.getItem("age");
+    }
+</script>
+
+<body onload="retrieve_users()">
+    <h1>Registered Users</h1>
+
+    <ul>
+        <li id="name">Hi</li>
+        <li id="age">Hi</li>
+    </ul>
+
+    <a href = "http://127.0.0.1:5500/Sender_Form.html" >Register Now</a>
+</body>
+</html>
